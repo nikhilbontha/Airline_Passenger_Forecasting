@@ -1,0 +1,83 @@
+body {
+  background: radial-gradient(circle at top left, #0F172A, #1E293B);
+  color: #E2E8F0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.hero-flight {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+.hero-sub {
+  font-size: 1.2rem;
+  color: #38BDF8;
+  margin-top: 12px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  width: 25% !important;
+  padding: 20px;
+}
+.sidebar-title { color:#60A5FA; font-weight:600; }
+
+/* Metric Cards */
+.glass-card {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+}
+.metric-title { font-size:0.9rem; color:#94A3B8; }
+.metric-value { font-size:1.8rem; font-weight:700; color:#FFFFFF; }
+
+/* Forecast Button */
+button[kind="primary"] {
+  background: linear-gradient(90deg,#2563EB,#0EA5E9);
+  color: #fff;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-weight:600;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+button[kind="primary"]:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+}
+
+/* Footer */
+.footer { text-align:center; padding:20px; color:#94A3B8; font-size:0.9rem; }

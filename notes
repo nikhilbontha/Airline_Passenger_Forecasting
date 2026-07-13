@@ -1,0 +1,6 @@
+"__init__.py" is used as to it makes the folder as a package.
+"data_loader.py" is used to load the data from data csv files.
+"preprocessing" after loading the data we will do the preprocessing techinques.
+"train_test_split" we use to split the data for training and testing.
+
+"sequence_generator.py" in the rnn or lstm we are passsing the data from to another one we need to split the data into the sequences .to generate the sequences or to landle it we use it.
